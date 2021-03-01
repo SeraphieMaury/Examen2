@@ -139,7 +139,8 @@ public class Platform {
 	 * @return les cours auxquels aucun étudiant n'est incrit
 	 */
 	public Set<Course> emptyCourses() {
-	return 
+            
+	return courses;
 	}
 
 }
