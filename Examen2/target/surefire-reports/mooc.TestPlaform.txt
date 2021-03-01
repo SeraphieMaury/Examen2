@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: mooc.TestPlaform
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 4, Errors: 4, Skipped: 0, Time elapsed: 0.147 s <<< FAILURE! - in mooc.TestPlaform
+testAcceptNull  Time elapsed: 0.078 s  <<< ERROR!
+java.lang.IllegalArgumentException: name is null
+	at mooc.TestPlaform.testAcceptNull(TestPlaform.java:120)
+
+testNoDuplicateRegistration  Time elapsed: 0 s  <<< ERROR!
+java.lang.UnsupportedOperationException: Pas encore implémenté
+	at mooc.TestPlaform.testNoDuplicateRegistration(TestPlaform.java:38)
+
+testCheckCourse  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Il faut un cours dispensé par l'université
+	at mooc.TestPlaform.testCheckCourse(TestPlaform.java:135)
+
+testCheckPerson  Time elapsed: 0.009 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Il faut un étudiant inscrit à l'université
+	at mooc.TestPlaform.testCheckPerson(TestPlaform.java:148)
+
+testCannotUnregister  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: On ne doit pas désisncrire un étudiant qui a déjà une note
+	at mooc.TestPlaform.testCannotUnregister(TestPlaform.java:84)
+
+testAccept  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at mooc.TestPlaform.testAccept(TestPlaform.java:108)
+
+testCannotChangeMark  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: On ne peut pas changer une note
+	at mooc.TestPlaform.testCannotChangeMark(TestPlaform.java:98)
+
+testGiveMark  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.UnsupportedOperationException: Pas encore implémenté
+	at mooc.TestPlaform.testGiveMark(TestPlaform.java:54)
+
